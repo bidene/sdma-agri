@@ -4,7 +4,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Filter, Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
-import { useSearchParams } from "next/navigation"
 import { Suspense } from "react"
 import Loading from "./loading"
 
@@ -113,7 +112,6 @@ const featuredProducts = [
 ]
 
 function ProductsContent() {
-  const searchParams = useSearchParams()
   
   return (
     <>
