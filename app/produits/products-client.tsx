@@ -4,6 +4,9 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Filter, Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
+import { useSearchParams } from "next/navigation"
+import { Suspense } from "react"
+import Loading from "./loading"
 
 const categories = [
   {
@@ -109,7 +112,9 @@ const featuredProducts = [
   },
 ]
 
-export default function ProductsClient() {
+function ProductsContent() {
+  const searchParams = useSearchParams()
+  
   return (
     <>
       {/* Hero */}
@@ -185,13 +190,13 @@ export default function ProductsClient() {
             </h2>
             <div className="flex items-center gap-2">
               <Button variant="outline" size="sm" className="bg-primary text-primary-foreground border-primary">
-                Tous
+                Tous les produits
               </Button>
               <Button variant="outline" size="sm">
-                Neufs
+                Produits neufs
               </Button>
               <Button variant="outline" size="sm">
-                Occasions
+                Produits d'occasion
               </Button>
             </div>
           </div>
@@ -242,7 +247,7 @@ export default function ProductsClient() {
                   <div className="flex items-center justify-between mt-4 pt-4 border-t border-border">
                     <span className="font-semibold text-card-foreground">{product.price}</span>
                     <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                      Voir détails
+                      Voir les détails
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </div>
@@ -283,5 +288,13 @@ export default function ProductsClient() {
         </div>
       </section>
     </>
+  )
+}
+
+export default function ProductsClient() {
+  return (
+    <Suspense fallback={<Loading />}>
+      <ProductsContent />
+    </Suspense>
   )
 }
