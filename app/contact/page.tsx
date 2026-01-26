@@ -388,13 +388,10 @@ export default function ContactPage() {
                   
                   <div className="space-y-2">
                     <p className="text-sm text-muted-foreground text-center">
-                      * Champs obligatoires. Vos données sont traitées conformément à notre{" "}
+                      Champs obligatoires. Vos données sont traitées conformément à notre{" "}
                       <a href="/politique-confidentialite" className="underline hover:text-foreground">
                         politique de confidentialité
                       </a>.
-                    </p>
-                    <p className="text-xs text-muted-foreground text-center">
-                      💬 En cliquant sur "Envoyer via WhatsApp", vous serez redirigé vers WhatsApp pour envoyer votre message.
                     </p>
                   </div>
                 </form>
