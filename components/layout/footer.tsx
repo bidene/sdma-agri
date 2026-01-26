@@ -39,9 +39,11 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary">
-                <span className="text-xl font-bold text-primary-foreground">S</span>
-              </div>
+              <img 
+                src="/images/logo33.png" 
+                alt="SDMA TRUCKS" 
+                className="h-12 w-auto"
+              />
               <div className="flex flex-col">
                 <span className="text-xl font-bold tracking-tight">SDMA TRUCKS</span>
               </div>
