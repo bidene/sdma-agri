@@ -10,9 +10,9 @@ const _inter = Inter({ subsets: ["latin"] });
 const _montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"] });
 
 export const metadata: Metadata = {
-  title: 'SDMA Agri - Concessionnaire Matériel Agricole VALTRA',
-  description: 'SDMA Agri, votre concessionnaire de matériel agricole VALTRA dans le Finistère et Morbihan. Vente, réparation et pièces détachées de tracteurs et équipements agricoles.',
-  keywords: 'tracteur, VALTRA, matériel agricole, Finistère, Morbihan, Bretagne, concessionnaire, réparation, pièces détachées',
+  title: 'SDMA TRUCKS - Matériel Agricole',
+  description: 'SDMA TRUCKS, votre spécialiste en matériel agricole dans le Morbihan. Vente, réparation et pièces détachées de tracteurs et équipements agricoles.',
+  keywords: 'tracteur, matériel agricole, Morbihan, Bretagne, réparation, pièces détachées',
   icons: {
     icon: [
       {

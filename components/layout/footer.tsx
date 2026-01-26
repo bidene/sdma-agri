@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock, Facebook, Linkedin } from "lucide-react"
 
 const footerLinks = {
   produits: [
-    { name: "Tracteurs VALTRA", href: "/produits/tracteurs" },
+    { name: "Tracteurs TRUCKS", href: "/produits/tracteurs" },
     { name: "Matériel de récolte", href: "/produits/recolte" },
     { name: "Travail du sol", href: "/produits/travail-sol" },
     { name: "Occasions", href: "/produits/occasions" },
@@ -24,13 +24,8 @@ const footerLinks = {
 
 const agencies = [
   {
-    name: "SDMA Bannalec",
-    address: "Zone Artisanale, 29380 Bannalec",
-    phone: "02 98 06 60 00",
-  },
-  {
-    name: "SDMA Plouay",
-    address: "Zone Industrielle, 56240 Plouay",
+    name: "SDMA Entraigues",
+    address: "Avenue des Valayans, 84320 Entraigues-sur-la-Sorgue",
     phone: "02 97 33 45 00",
   },
 ]
@@ -48,12 +43,11 @@ export function Footer() {
                 <span className="text-xl font-bold text-primary-foreground">S</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-tight">SDMA AGRI</span>
-                <span className="text-xs text-sidebar-foreground/70 uppercase tracking-wider">Concessionnaire VALTRA</span>
+                <span className="text-xl font-bold tracking-tight">SDMA TRUCKS</span>
               </div>
             </Link>
             <p className="text-sidebar-foreground/70 leading-relaxed mb-6 max-w-sm">
-              Votre partenaire de confiance pour le matériel agricole dans le Finistère et le Morbihan depuis plus de 30 ans.
+              Votre partenaire de confiance pour le matériel agricole dans le Vaucluse depuis plus de 30 ans.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -139,7 +133,7 @@ export function Footer() {
       <div className="border-t border-sidebar-border">
         <div className="mx-auto max-w-7xl px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-sidebar-foreground/60">
-            <p>&copy; {new Date().getFullYear()} SDMA Agri. Tous droits réservés.</p>
+            <p>&copy; {new Date().getFullYear()} SDMA TRUCKS. Tous droits réservés.</p>
             <div className="flex items-center gap-6">
               <Link href="/mentions-legales" className="hover:text-sidebar-foreground transition-colors">
                 Mentions légales

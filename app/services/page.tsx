@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Wrench, Package, CreditCard, Clock, CheckCircle2, Phone, Truck } from "lucide-react"
 
 export const metadata = {
-  title: "Services - SDMA Agri | Atelier, Pièces détachées, Financement",
-  description: "Découvrez nos services: atelier de réparation certifié, pièces détachées d'origine VALTRA, solutions de financement. Service après-vente de qualité en Bretagne.",
+  title: "Services - SDMA TRUCKS | Atelier, Pièces détachées, Financement",
+  description: "Découvrez nos services: atelier de réparation certifié, pièces détachées d'origine, solutions de financement. Service après-vente de qualité en Bretagne.",
 }
 
 const services = [
@@ -13,14 +13,14 @@ const services = [
     id: "atelier",
     icon: Wrench,
     title: "Atelier & Réparation",
-    description: "Notre atelier est équipé des dernières technologies de diagnostic pour assurer l'entretien et la réparation de tous vos équipements agricoles VALTRA et autres marques.",
+    description: "Notre atelier est équipé des dernières technologies de diagnostic pour assurer l'entretien et la réparation de tous vos équipements agricoles TRUCKS et autres marques.",
     image: "/images/workshop.jpg",
     features: [
       "Diagnostic électronique complet",
       "Réparation mécanique et hydraulique",
       "Entretien préventif et révisions",
       "Intervention sur site possible",
-      "Techniciens certifiés VALTRA",
+      "Techniciens certifiés TRUCKS",
       "Garantie sur les réparations",
     ],
   },
@@ -28,13 +28,13 @@ const services = [
     id: "pieces",
     icon: Package,
     title: "Pièces détachées",
-    description: "Un stock permanent de plus de 5000 références de pièces d'origine VALTRA et adaptables. Commande express pour les pièces non disponibles avec livraison sous 24-48h.",
+    description: "Un stock permanent de plus de 5000 références de pièces d'origine TRUCKS et adaptables. Commande express pour les pièces non disponibles avec livraison sous 24-48h.",
     image: "/images/parts.jpg",
     features: [
       "Stock permanent de pièces courantes",
       "Pièces d'origine garanties",
       "Commande express sous 24-48h",
-      "Livraison dans tout le Finistère et Morbihan",
+      "Livraison dans tout le Morbihan",
       "Conseil technique personnalisé",
       "Tarifs compétitifs",
     ],
@@ -96,9 +96,9 @@ export default function ServicesPage() {
             </p>
             <div className="mt-8 flex items-center gap-6">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <a href="tel:+33298066000">
+                <a href="tel:+33297334500">
                   <Phone className="mr-2 h-5 w-5" />
-                  02 98 06 60 00
+                  02 97 33 45 00
                 </a>
               </Button>
               <div className="flex items-center gap-2 text-card/70">
@@ -241,10 +241,10 @@ export default function ServicesPage() {
             <div className="bg-secondary-foreground/10 rounded-2xl p-8 text-center">
               <p className="text-sm font-semibold uppercase tracking-wider mb-2">Appelez-nous</p>
               <a 
-                href="tel:+33298066000" 
+                href="tel:+33297334500" 
                 className="text-4xl sm:text-5xl font-bold hover:text-primary transition-colors"
               >
-                02 98 06 60 00
+                02 97 33 45 00
               </a>
               <p className="mt-4 text-secondary-foreground/70">
                 Du lundi au vendredi de 8h30 à 18h

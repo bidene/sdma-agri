@@ -15,25 +15,26 @@ const navigation = [
   { name: "Accueil", href: "/" },
   {
     name: "Produits",
-    href: "/produits",
+    href: "/Produits",
     children: [
-      { name: "Tracteurs VALTRA", href: "/produits/tracteurs" },
-      { name: "Matériel de récolte", href: "/produits/recolte" },
-      { name: "Matériel de travail du sol", href: "/produits/travail-sol" },
-      { name: "Occasions", href: "/produits/occasions" },
+      { name: "Matériels agricoles", href: "/produits/materiels-agricoles" },
+      { name: "Travaux publics - Matériels TP", href: "/produits/travaux-publics" },
+      { name: "Manutention de matériaux", href: "/produits/manutention" },
+      { name: "Transports", href: "/produits/transports" },
+      { name: "Véhicules utilitaires", href: "/produits/vehicules-utilitaires" },
     ],
   },
   {
     name: "Services",
-    href: "/services",
+    href: "/Services",
     children: [
-      { name: "Atelier & Réparation", href: "/services#atelier" },
-      { name: "Pièces détachées", href: "/services#pieces" },
-      { name: "Financement", href: "/services#financement" },
+      { name: "Livraison / Paiement", href: "/services/livraison-paiement" },
+      { name: "Suivi de commande", href: "/services/suivi-commande" },
+      { name: "Réparation & Maintenance", href: "/services/reparation-maintenance" },
+      { name: "Financement", href: "/services/financement" },
     ],
   },
-  { name: "Actualités", href: "/actualites" },
-  { name: "Contact", href: "/contact" },
+  { name: "Nous contacter", href: "/contact" },
 ]
 
 export function Header() {
@@ -45,13 +46,13 @@ export function Header() {
       <div className="border-b border-sidebar-border">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+33298066000" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="tel:+33297334500" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="h-4 w-4" />
-              <span>02 98 06 60 00</span>
+              <span>02 97 33 45 00</span>
             </a>
           </div>
           <div className="hidden md:flex items-center gap-4">
-            <span className="text-sidebar-foreground/70">Finistère & Morbihan</span>
+            <span className="text-sidebar-foreground/70">Morbihan</span>
             <span className="text-sidebar-foreground/40">|</span>
             <span className="text-sidebar-foreground/70">Lun-Ven: 8h30-12h / 14h-18h</span>
           </div>
@@ -67,8 +68,7 @@ export function Header() {
               <span className="text-xl font-bold text-primary-foreground">S</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tight">SDMA AGRI</span>
-              <span className="text-xs text-sidebar-foreground/70 uppercase tracking-wider">Concessionnaire VALTRA</span>
+              <span className="text-xl font-bold tracking-tight">SDMA TRUCKS</span>
             </div>
           </Link>
 

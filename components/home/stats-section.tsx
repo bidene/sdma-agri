@@ -11,7 +11,7 @@ export function StatsSection() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            SDMA Agri en chiffres
+            SDMA TRUCKS en chiffres
           </h2>
           <p className="mt-4 text-lg text-primary-foreground/80 max-w-2xl mx-auto">
             Des années de savoir-faire au service de l&apos;agriculture bretonne

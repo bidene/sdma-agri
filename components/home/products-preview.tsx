@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 const products = [
   {
     id: 1,
-    name: "VALTRA N Series",
+    name: "TRUCKS N Series",
     category: "Tracteurs polyvalents",
     power: "125-220 ch",
     image: "/images/hero-tractor.jpg",
@@ -14,7 +14,7 @@ const products = [
   },
   {
     id: 2,
-    name: "VALTRA T Series",
+    name: "TRUCKS T Series",
     category: "Tracteurs haute puissance",
     power: "175-271 ch",
     image: "/images/field-work.jpg",
@@ -22,7 +22,7 @@ const products = [
   },
   {
     id: 3,
-    name: "VALTRA A Series",
+    name: "TRUCKS A Series",
     category: "Tracteurs compacts",
     power: "75-130 ch",
     image: "/images/hero-tractor.jpg",
@@ -40,7 +40,7 @@ export function ProductsPreview() {
               Nos gammes de tracteurs
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
-              Découvrez notre sélection de tracteurs VALTRA, conçus pour répondre 
+              Découvrez notre sélection de tracteurs TRUCKS, conçus pour répondre 
               à toutes les exigences de l&apos;agriculture moderne.
             </p>
           </div>

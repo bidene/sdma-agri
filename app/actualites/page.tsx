@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar, Tag } from "lucide-react"
 
 export const metadata = {
-  title: "Actualités - SDMA Agri | Nouveautés et Événements",
-  description: "Suivez les dernières actualités de SDMA Agri: nouveaux modèles VALTRA, événements, salons agricoles et conseils pour votre exploitation.",
+  title: "Actualités - SDMA TRUCKS | Nouveautés et Événements",
+  description: "Suivez les dernières actualités de SDMA TRUCKS: nouveaux modèles, événements, salons agricoles et conseils pour votre exploitation.",
 }
 
 const newsCategories = [
@@ -19,8 +19,8 @@ const newsCategories = [
 const newsArticles = [
   {
     id: 1,
-    title: "Nouveau VALTRA Q Series : la révolution de la polyvalence",
-    excerpt: "Découvrez le nouveau VALTRA Q Series, conçu pour offrir une polyvalence inégalée dans tous les travaux agricoles. Avec sa transmission SmartTouch et sa cabine redessinée, il établit de nouveaux standards.",
+    title: "Nouveau TRUCKS Q Series : la révolution de la polyvalence",
+    excerpt: "Découvrez le nouveau TRUCKS Q Series, conçu pour offrir une polyvalence inégalée dans tous les travaux agricoles. Avec sa transmission SmartTouch et sa cabine redessinée, il établit de nouveaux standards.",
     category: "nouveautes",
     date: "15 janvier 2026",
     image: "/images/news-new-model.jpg",
@@ -29,7 +29,7 @@ const newsArticles = [
   {
     id: 2,
     title: "SDMA présent au Salon de l'Agriculture 2026",
-    excerpt: "Retrouvez-nous du 22 février au 2 mars au Salon International de l'Agriculture à Paris. Notre équipe sera présente pour vous faire découvrir les dernières innovations VALTRA.",
+    excerpt: "Retrouvez-nous du 22 février au 2 mars au Salon International de l'Agriculture à Paris. Notre équipe sera présente pour vous faire découvrir les dernières innovations TRUCKS.",
     category: "evenements",
     date: "10 janvier 2026",
     image: "/images/news-salon.jpg",
@@ -38,7 +38,7 @@ const newsArticles = [
   {
     id: 3,
     title: "Bienvenue à nos nouveaux techniciens",
-    excerpt: "L'équipe SDMA s'agrandit ! Nous accueillons deux nouveaux techniciens certifiés VALTRA pour renforcer notre service après-vente et réduire les délais d'intervention.",
+    excerpt: "L'équipe SDMA s'agrandit ! Nous accueillons deux nouveaux techniciens certifiés TRUCKS pour renforcer notre service après-vente et réduire les délais d'intervention.",
     category: "entreprise",
     date: "5 janvier 2026",
     image: "/images/news-team.jpg",
@@ -87,7 +87,7 @@ export default function ActualitesPage() {
               Actualités
             </h1>
             <p className="mt-4 text-lg text-card/80 leading-relaxed">
-              Restez informé des dernières nouveautés VALTRA, des événements à 
+              Restez informé des dernières nouveautés TRUCKS, des événements à 
               venir et des conseils pour optimiser votre exploitation agricole.
             </p>
           </div>

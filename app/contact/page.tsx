@@ -14,30 +14,18 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from "lucide-react"
 
 const agencies = [
   {
-    id: "bannalec",
-    name: "SDMA Bannalec",
-    address: "Zone Artisanale de Kerangonan",
-    city: "29380 Bannalec",
-    department: "Finistère",
-    phone: "02 98 06 60 00",
-    email: "bannalec@sdma-agri.fr",
-    hours: "Lun-Ven: 8h30-12h / 14h-18h",
-    coordinates: { lat: 47.9289, lng: -3.6978 },
-  },
-  {
     id: "plouay",
-    name: "SDMA Plouay",
-    address: "Zone Industrielle du Plassart",
-    city: "56240 Plouay",
-    department: "Morbihan",
+    name: "SDMA Entraigues",
+    address: "Avenue des Valayans",
+    city: "84320 Entraigues-sur-la-Sorgue, France",
+    department: "Vaucluse",
     phone: "02 97 33 45 00",
-    email: "plouay@sdma-agri.fr",
+    email: "infosdma84@gmail.com",
     hours: "Lun-Ven: 8h30-12h / 14h-18h",
-    coordinates: { lat: 47.9103, lng: -3.3381 },
+    coordinates: { lat: 43.9973049, lng: 4.9519098 },
   },
 ]
 
@@ -67,8 +55,30 @@ export default function ContactPage() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    // Construire le message pour WhatsApp
+    const whatsappMessage = encodeURIComponent(
+      `📋 *NOUVELLE DEMANDE DE CONTACT* 📋\n\n` +
+      `👤 *Informations personnelles:*\n` +
+      `• Prénom: ${formState.firstName}\n` +
+      `• Nom: ${formState.lastName}\n` +
+      `• Email: ${formState.email}\n` +
+      `• Téléphone: ${formState.phone || 'Non renseigné'}\n\n` +
+      `🏢 *Détails de la demande:*\n` +
+      `• Agence: ${formState.agency ? agencies.find(a => a.id === formState.agency)?.name : 'Non spécifiée'}\n` +
+      `• Sujet: ${formState.subject ? subjects.find(s => s.value === formState.subject)?.label : 'Non spécifié'}\n\n` +
+      `💬 *Message:*\n${formState.message}\n\n` +
+      `📅 *Date:* ${new Date().toLocaleDateString('fr-FR')}\n` +
+      `🕐 *Heure:* ${new Date().toLocaleTimeString('fr-FR')}`
+    )
+    
+    // Numéro WhatsApp (remplacez par votre numéro)
+    const whatsappNumber = "33612345678" // Format international sans + ni 00
+    
+    // Ouvrir WhatsApp avec le message pré-rempli
+    window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank')
+    
+    // Simuler l'envoi pour l'UI
+    await new Promise(resolve => setTimeout(resolve, 1000))
     
     setIsSubmitting(false)
     setIsSubmitted(true)
@@ -118,7 +128,7 @@ export default function ContactPage() {
                   
                   <div className="space-y-4 flex-1">
                     <div className="flex items-start gap-3">
-                      <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-2xl text-primary shrink-0 mt-0.5">📍</span>
                       <div>
                         <p className="text-card-foreground">{agency.address}</p>
                         <p className="text-muted-foreground">{agency.city}</p>
@@ -126,7 +136,7 @@ export default function ContactPage() {
                     </div>
                     
                     <div className="flex items-center gap-3">
-                      <Phone className="h-5 w-5 text-primary shrink-0" />
+                      <span className="text-2xl text-primary shrink-0">📞</span>
                       <a 
                         href={`tel:${agency.phone.replace(/\s/g, "")}`}
                         className="text-card-foreground hover:text-primary transition-colors"
@@ -136,7 +146,7 @@ export default function ContactPage() {
                     </div>
                     
                     <div className="flex items-center gap-3">
-                      <Mail className="h-5 w-5 text-primary shrink-0" />
+                      <span className="text-2xl text-primary shrink-0">📧</span>
                       <a 
                         href={`mailto:${agency.email}`}
                         className="text-card-foreground hover:text-primary transition-colors"
@@ -146,7 +156,7 @@ export default function ContactPage() {
                     </div>
                     
                     <div className="flex items-center gap-3">
-                      <Clock className="h-5 w-5 text-primary shrink-0" />
+                      <span className="text-2xl text-primary shrink-0">⏰</span>
                       <span className="text-muted-foreground">{agency.hours}</span>
                     </div>
                   </div>
@@ -158,7 +168,7 @@ export default function ContactPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <MapPin className="mr-2 h-4 w-4" />
+                        <span className="mr-2 text-lg">📍</span>
                         Voir sur Google Maps
                       </a>
                     </Button>
@@ -187,37 +197,37 @@ export default function ContactPage() {
               <div className="mt-8 space-y-6">
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <Phone className="h-6 w-6" />
+                    <span className="text-2xl text-primary">📞</span>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Téléphone</p>
                     <a 
-                      href="tel:+33298066000" 
+                      href="tel:+33297334500" 
                       className="text-lg font-semibold text-card-foreground hover:text-primary transition-colors"
                     >
-                      02 98 06 60 00
+                      02 97 33 45 00
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <Mail className="h-6 w-6" />
+                    <span className="text-2xl text-primary">📧</span>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
                     <a 
-                      href="mailto:contact@sdma-agri.fr" 
+                      href="mailto:infosdma84@gmail.com" 
                       className="text-lg font-semibold text-card-foreground hover:text-primary transition-colors"
                     >
-                      contact@sdma-agri.fr
+                      infosdma84@gmail.com
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <Clock className="h-6 w-6" />
+                    <span className="text-2xl text-primary">⏰</span>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Horaires</p>
@@ -233,7 +243,7 @@ export default function ContactPage() {
               {isSubmitted ? (
                 <div className="flex flex-col items-center justify-center h-full text-center py-12">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-6">
-                    <CheckCircle2 className="h-8 w-8" />
+                    <span className="text-3xl text-primary">✅</span>
                   </div>
                   <h3 className="text-2xl font-bold text-card-foreground mb-2">
                     Message envoyé !
@@ -370,18 +380,23 @@ export default function ContactPage() {
                       "Envoi en cours..."
                     ) : (
                       <>
-                        <Send className="mr-2 h-5 w-5" />
-                        Envoyer le message
+                        <span className="mr-2 text-lg">💬</span>
+                        Envoyer via WhatsApp
                       </>
                     )}
                   </Button>
                   
-                  <p className="text-sm text-muted-foreground text-center">
-                    * Champs obligatoires. Vos données sont traitées conformément à notre{" "}
-                    <a href="/politique-confidentialite" className="underline hover:text-foreground">
-                      politique de confidentialité
-                    </a>.
-                  </p>
+                  <div className="space-y-2">
+                    <p className="text-sm text-muted-foreground text-center">
+                      * Champs obligatoires. Vos données sont traitées conformément à notre{" "}
+                      <a href="/politique-confidentialite" className="underline hover:text-foreground">
+                        politique de confidentialité
+                      </a>.
+                    </p>
+                    <p className="text-xs text-muted-foreground text-center">
+                      💬 En cliquant sur "Envoyer via WhatsApp", vous serez redirigé vers WhatsApp pour envoyer votre message.
+                    </p>
+                  </div>
                 </form>
               )}
             </div>

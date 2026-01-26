@@ -10,7 +10,7 @@ import Loading from "./loading"
 const categories = [
   {
     id: "tracteurs",
-    name: "Tracteurs VALTRA",
+    name: "Tracteurs TRUCKS",
     description: "Une gamme complète de tracteurs pour tous vos besoins",
     image: "/images/hero-tractor.jpg",
     href: "/produits/tracteurs",
@@ -45,7 +45,7 @@ const categories = [
 const featuredProducts = [
   {
     id: 1,
-    name: "VALTRA N155e",
+    name: "TRUCKS N155e",
     category: "Tracteurs",
     series: "N Series",
     power: "155 ch",
@@ -55,7 +55,7 @@ const featuredProducts = [
   },
   {
     id: 2,
-    name: "VALTRA T235",
+    name: "TRUCKS T235",
     category: "Tracteurs",
     series: "T Series",
     power: "235 ch",
@@ -65,7 +65,7 @@ const featuredProducts = [
   },
   {
     id: 3,
-    name: "VALTRA A115",
+    name: "TRUCKS A115",
     category: "Tracteurs",
     series: "A Series",
     power: "115 ch",
@@ -75,7 +75,7 @@ const featuredProducts = [
   },
   {
     id: 4,
-    name: "VALTRA T195",
+    name: "TRUCKS T195",
     category: "Tracteurs",
     series: "T Series",
     power: "195 ch",
@@ -88,7 +88,7 @@ const featuredProducts = [
   },
   {
     id: 5,
-    name: "VALTRA N134",
+    name: "TRUCKS N134",
     category: "Tracteurs",
     series: "N Series",
     power: "134 ch",
@@ -101,7 +101,7 @@ const featuredProducts = [
   },
   {
     id: 6,
-    name: "VALTRA A104",
+    name: "TRUCKS A104",
     category: "Tracteurs",
     series: "A Series",
     power: "104 ch",
@@ -123,7 +123,7 @@ function ProductsContent() {
               Nos produits
             </h1>
             <p className="mt-4 text-lg text-card/80 leading-relaxed">
-              Découvrez notre gamme complète de matériel agricole VALTRA. 
+              Découvrez notre gamme complète de matériel agricole TRUCKS. 
               Des tracteurs performants aux équipements spécialisés, nous avons 
               la solution pour votre exploitation.
             </p>

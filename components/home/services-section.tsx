@@ -15,7 +15,7 @@ const services = [
   {
     icon: Package,
     title: "Pièces détachées",
-    description: "Un large stock de pièces d'origine VALTRA et adaptables disponibles immédiatement.",
+    description: "Un large stock de pièces d'origine TRUCKS et adaptables disponibles immédiatement.",
     image: "/images/parts.jpg",
     href: "/services#pieces",
     features: ["Stock permanent", "Commande express", "Pièces d'origine"],

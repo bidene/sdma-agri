@@ -7,7 +7,7 @@ const testimonials = [
     role: "Agriculteur à Bannalec",
   },
   {
-    quote: "J'ai acheté mon premier VALTRA chez SDMA il y a 10 ans. Depuis, je n'ai jamais changé de concessionnaire. La qualité du service est exceptionnelle.",
+    quote: "J'ai acheté mon premier TRUCKS chez SDMA il y a 10 ans. Depuis, je n'ai jamais changé de concessionnaire. La qualité du service est exceptionnelle.",
     author: "Marie L.",
     role: "Éleveuse laitière",
   },

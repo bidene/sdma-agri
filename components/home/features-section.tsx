@@ -4,12 +4,12 @@ const features = [
   {
     icon: Wrench,
     title: "Atelier certifié",
-    description: "Nos techniciens sont formés et certifiés par VALTRA pour garantir un service de qualité optimale.",
+    description: "Nos techniciens sont formés et certifiés par TRUCKS pour garantir un service de qualité optimale.",
   },
   {
     icon: Truck,
     title: "Livraison rapide",
-    description: "Livraison de vos équipements et pièces détachées dans tout le Finistère et le Morbihan.",
+    description: "Livraison de vos équipements et pièces détachées dans tout le Morbihan.",
   },
   {
     icon: Clock,
@@ -19,7 +19,7 @@ const features = [
   {
     icon: Shield,
     title: "Garantie constructeur",
-    description: "Tous nos équipements neufs sont couverts par la garantie officielle VALTRA.",
+    description: "Tous nos équipements neufs sont couverts par la garantie officielle TRUCKS.",
   },
 ]
 
@@ -29,7 +29,7 @@ export function FeaturesSection() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Pourquoi choisir SDMA Agri ?
+            Pourquoi choisir SDMA TRUCKS ?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Un service complet pour répondre à tous vos besoins en matériel agricole
