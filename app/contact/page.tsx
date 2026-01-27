@@ -273,7 +273,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div className="space-y-2">
-                      <Label htmlFor="firstName">Prénom *</Label>
+                      <Label htmlFor="firstName">Prénom</Label>
                       <Input
                         id="firstName"
                         required
@@ -283,7 +283,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="lastName">Nom *</Label>
+                      <Label htmlFor="lastName">Nom</Label>
                       <Input
                         id="lastName"
                         required
@@ -296,7 +296,7 @@ export default function ContactPage() {
                   
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
+                      <Label htmlFor="email">Email</Label>
                       <Input
                         id="email"
                         type="email"
@@ -338,7 +338,7 @@ export default function ContactPage() {
                       </Select>
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="subject">Sujet *</Label>
+                      <Label htmlFor="subject">Sujet</Label>
                       <Select
                         value={formState.subject}
                         onValueChange={(value) => setFormState({ ...formState, subject: value })}
@@ -359,7 +359,7 @@ export default function ContactPage() {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message *</Label>
+                    <Label htmlFor="message">Message</Label>
                     <Textarea
                       id="message"
                       required
